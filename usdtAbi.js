@@ -1,1 +1,0 @@
-const usdtABI = [ /* erc20ABI ที่คุณยืนยันแล้ว */ ];
