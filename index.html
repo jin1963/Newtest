@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KJC Referral + Auto-Staking</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 KJC Referral + Auto-Staking</h1>
+    <p id="walletStatus" style="color:red">❌ Wallet not connected</p>
+    <button id="connectWallet">🔗 Connect Wallet</button>
+
+    <hr/>
+
+    <h2>🔗 Your Referral Link:</h2>
+    <input type="text" id="referralLink" readonly />
+    <button id="copyReferralLink">📋 Copy Link</button>
+
+    <h2>✉️ Enter Referrer Address:</h2>
+    <input type="text" id="referrerInput" placeholder="Referrer Address" />
+    <button id="registerReferrer">📌 Register Referrer</button>
+
+    <h2>💸 Amount of USDT to Spend:</h2>
+    <input type="number" id="usdtAmount" placeholder="10" min="1" />
+    <button id="buyKJC">💰 Buy and Stake KJC</button>
+
+    <hr/>
+
+    <h2>📈 Your Stakes</h2>
+    <div id="stakesList">Loading...</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="config.js"></script>
+  <script src="abi.js"></script>
+  <script src="usdtAbi.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
